@@ -1,7 +1,7 @@
 # music-player-ui
-**# A Clean UI for a Web-Based Music Player**
+**A Clean UI for a Web-Based Music Player**
 
-Our web-based music player features a sleek and intuitive user interface designed to enhance your listening experience. The minimalist design ensures that the focus remains on your music, with easy-to-navigate controls and a visually appealing layout.
+This web-based music player features a sleek and intuitive user interface designed to enhance your listening experience. The minimalist design ensures that the focus remains on your music, with easy-to-navigate controls and a visually appealing layout.
 
 Key Features:
 - **Simple Navigation**: Effortlessly browse through your music library with a clean and organized menu. Quickly find your favorite tracks, albums, and playlists.
