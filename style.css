@@ -7,7 +7,8 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     flex-direction: column;
-    background: url(fons.jpg);
+    background-color: black;
+    /*background: url(fons.jpg);*/
     background-position: center;
     background-size: cover;
     width: 100vw;
@@ -18,6 +19,7 @@
     display: flex;
     left: 0;
     right: 0;
+    height: 5%;
     text-align: center;
     align-content: center;
     justify-content: center;
@@ -25,8 +27,9 @@
 }
 
 .header .item1 {
-    backdrop-filter: blur(10px);
+    background-color: white;
     color: white;
+    width: 10px;
     border-radius: 3rem;
     padding: 1rem;
 }
@@ -36,8 +39,9 @@
 }
 
 .header .item3 {
-    backdrop-filter: blur(10px);
+    background-color: white;
     color: white;
+    width: 10px;
     border-radius: 3rem;
     padding: 1rem;
 }
@@ -54,20 +58,51 @@
 }
 
 .currently-playing {
+    padding: 1rem;
     width: 25%;
     height: 70%;
-    backdrop-filter: blur(10px);
+    background-color: white;
     border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.album-art {
+    flex: 1;
 }
 
 .controls {
     display: flex;
     padding: 1rem;
-    width: 10%;
+    width: 80%;
+    height: 10%;
+    border-radius: 3rem;
+    background-color: black;
+    justify-content: space-between;
 }
 
 .controls .item1 {
+    background-color: white;
+    color: white;
+    border-radius: 1rem;
+    width: 50px;
+}
 
+.controls .item2 {
+    background-color: white;
+    color: white;
+    border-radius: 1rem;
+    width: 50px;
+}
+
+.controls .item3 {
+    background-color: white;
+    color: white;
+    border-radius: 1rem;
+    width: 50px;
 }
 
 .footer {
@@ -75,7 +110,58 @@
     left: 0;
     right: 0;
     text-align: center;
+    height: 8%;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: .5rem;
+}
+
+.footer .item1 {
+    background-color: white;
+    width: 10%;
+    align-content: center;
+    border-radius: 3rem;
+}
+
+.footer .item2 {
+    background-color: white;
+    width: 10%;
+    align-content: center;
+    border-radius: 3rem;
+}
+
+.footer .item3 {
+    background-color: white;
+    width: 10%;
+    align-content: center;
+    justify-content: space-between;
+    border-radius: 3rem;
+    display: flex;
+}
+
+.js {
+    margin: 10px;
+    border-radius: .2rem;
+    color: white;
+    background-color: black;
+    align-content: center;
+    width: 30px;
+}
+
+.css {
+    margin: 10px;
+    border-radius: .2rem;
+    color: white;
+    background-color: black;
+    align-content: center;
+    width: 30px;
+}
+
+.html {
+    margin: 10px;
+    border-radius: .2rem;
+    color: white;
+    background-color: black;
+    align-content: center;
+    width: 30px;
 }
