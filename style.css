@@ -27,12 +27,20 @@
 
 .header .item1 {
     backdrop-filter: blur(10px);
-    color: white;
     width: 10px;
     height: 10px;
     border: rgba(255, 255, 255, 0.4) solid 2px;
     border-radius: 3rem;
     padding: 1rem;
+}
+
+.header .item1 img {
+    opacity: 60%;
+    top: 8px;
+    right: 8px;
+    filter: invert(100%);
+    width: 70%;
+    position: absolute;
 }
 
 .header .item2 {
@@ -50,9 +58,10 @@
 
 .header .item3 img {
     opacity: 60%;
+    top: 8px;
+    right: 8px;
     filter: invert(100%);
     width: 70%;
-    height: auto;
     position: absolute;
 }
 
@@ -136,47 +145,43 @@
 
 .footer .item1 {
     width: 10%;
+    color: rgba(255, 255, 255, 0.6);
     align-content: center;
     border: rgba(255, 255, 255, 0.4) solid 2px;
     border-radius: 3rem;
     backdrop-filter: blur(10px);
+}
+
+.footer .item1:hover {
+    color: rgba(255, 255, 255, 1);
+    border: rgba(255, 255, 255, 1) solid 2px;
+    backdrop-filter: blur(50px);
 }
 
 .footer .item2 {
     width: 10%;
-    align-content: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border: rgba(255, 255, 255, 0.4) solid 2px;
     border-radius: 3rem;
     backdrop-filter: blur(10px);
     display: flex;
+    padding: 1rem;
 }
 
-.js {
-    margin: 10px;
-    border: rgba(255, 255, 255, 0.4) solid 2px;
-    border-radius: .2rem;
-    color: white;
-    align-content: center;
+.footer .item2 img {
+    opacity: 60%;
+    filter: invert(100%);
     width: 30px;
 }
 
-.css {
-    margin: 10px;
-    border: rgba(255, 255, 255, 0.4) solid 2px;
-    border-radius: .2rem;
-    color: white;
-    align-content: center;
-    width: 30px;
+.footer .item2:hover {
+    color: rgba(255, 255, 255, 1);
+    border: rgba(255, 255, 255, 1) solid 2px;
+    backdrop-filter: blur(50px);
 }
 
-.html {
-    margin: 10px;
-    border: rgba(255, 255, 255, 0.4) solid 2px;
-    border-radius: .2rem;
-    color: white;
-    align-content: center;
-    width: 30px;
+.footer .item2 img:hover {
+    opacity: 100%;
 }
 
 .copyrights {
