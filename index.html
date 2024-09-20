@@ -7,32 +7,31 @@
     <title>Music</title>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="item1"><img src="https://cdn-icons-png.flaticon.com/512/12314/12314153.png" alt="menu"></div>
-            <div class="item2"></div>
-            <div class="item3"><img src="https://cdn-icons-png.flaticon.com/512/481/481868.png" alt="brush"></div>
+    <div class="flex flex-col w-screen h-screen overflow-hidden bg-[url('fons.jpg')] bg-cover">
+        <div class="w-max overflow-hidden">
+            <div class="w-4"><img src="https://cdn-icons-png.flaticon.com/512/12314/12314153.png" alt="menu"></div>
+            <div class="w-4"><img src="https://cdn-icons-png.flaticon.com/512/481/481868.png" alt="brush"></div>
         </div>
         <div class="section">
             <div class="currently-playing">
-                <div class="album-art"><img src="album.png" alt="album-art"></div>
+                <div class="w-40"><img src="album.png" alt="album-art"></div>
                 <div class="song-info">
-                    <div class="title">Trouble</div>
+                    <div class="">Trouble</div>
                     <div class="artist">Cage The Elephant</div>
                 </div>
                 <div class="controls">
-                    <div class="item1"><img src="https://cdn-icons-png.flaticon.com/512/3318/3318703.png" alt="backward"></div>
-                    <div class="item2">
+                    <div class="w-4"><img src="https://cdn-icons-png.flaticon.com/512/3318/3318703.png" alt="backward"></div>
+                    <div class="w-4">
                         <img id="play" src="https://cdn-icons-png.flaticon.com/512/8029/8029490.png" alt="play">
                         <img id="pause" src="https://cdn-icons-png.flaticon.com/512/8029/8029489.png" alt="pause">
                     </div>
-                    <div class="item3"><img src="https://cdn-icons-png.flaticon.com/512/3318/3318722.png" alt="forward"></div>
+                    <div class="w-4"><img src="https://cdn-icons-png.flaticon.com/512/3318/3318722.png" alt="forward"></div>
                 </div>
             </div>
         </div>
         <div class="footer">
             <button class="border-2 rounded" onclick="copyrights()">Copyrights</button>
-            <div class="item2">
+            <div class="w-4">
                 <img src="https://cdn-icons-png.flaticon.com/512/721/721671.png" alt="java-script">
                 <img src="https://cdn-icons-png.flaticon.com/512/732/732007.png" alt="css">
                 <img src="https://cdn-icons-png.flaticon.com/512/1051/1051328.png" alt="html">
@@ -40,7 +39,7 @@
         </div>
     </div>
 
-    <div class="hidden" id="crs">
+    <div class="top-0 absolute" id="crs">
         <button class="border-2 rounded" onclick="close()">X</button>
         <div class="icons">
             <p>Freepik Icons</p>
