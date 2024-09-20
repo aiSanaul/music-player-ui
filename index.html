@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="footer">
-            <div class="item1">Copyrights</div>
+            <button class="border-2 rounded" onclick="copyrights()">Copyrights</button>
             <div class="item2">
                 <img src="https://cdn-icons-png.flaticon.com/512/721/721671.png" alt="java-script">
                 <img src="https://cdn-icons-png.flaticon.com/512/732/732007.png" alt="css">
@@ -40,7 +40,8 @@
         </div>
     </div>
 
-    <div class="copyrights">
+    <div class="hidden" id="crs">
+        <button class="border-2 rounded" onclick="close()">X</button>
         <div class="icons">
             <p>Freepik Icons</p>
             <a href="https://www.flaticon.com/free-icons/brush" title="brush icons">Brush icons created by Those Icons</a>
@@ -56,6 +57,7 @@
         <div class="inspirations"></div>
     </div>
 
-    <script src="main.js"></script> 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js"></script>
 </body>
 </html>
