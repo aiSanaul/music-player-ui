@@ -27,22 +27,22 @@
             </div>
         </div>
         <div id="section" class="grid w-full flex-1 content-center justify-center">
-            <div id="player" class="w-max rounded content-center">
-                <div class="w-40 flex-1"><img src="album.png" alt="album-art"></div>
-                <div class="flex flex-col">
-                    <div class="">Trouble</div>
-                    <div class="artist">Cage The Elephant</div>
+            <div id="player" class="grid grid-flow-row w-max border-2 border-white/30 rounded-[2rem] content-center text-center p-[1rem] backdrop-blur">
+                <div class="w-[20rem] flex-1 rounded-t-[1rem] overflow-hidden"><img src="album.png" alt="album-art"></div>
+                <div class="flex flex-col bg-black/20">
+                    <div class="text-[22px] text-white">Trouble</div>
+                    <div class="text-white">Cage The Elephant</div>
                 </div>
-                <div class="flex">
-                    <div class="w-10"><img src="https://cdn-icons-png.flaticon.com/512/3318/3318703.png" alt="backward">
+                <div class="flex content-center justify-evenly bg-black/15 rounded-b-[1rem] p-[1rem]">
+                    <div class="grid w-[4rem] justify-center content-center invert"><img class="hover:w-[3.8rem]" src="https://cdn-icons-png.flaticon.com/512/3318/3318703.png" alt="backward">
                     </div>
-                    <div class="w-10">
-                        <img class="block" id="play" src="https://cdn-icons-png.flaticon.com/512/8029/8029490.png"
+                    <div class="grid w-[4rem] justify-center content-center">
+                        <img class="block invert hover:w-[3.8rem]" id="play" src="https://cdn-icons-png.flaticon.com/512/8029/8029490.png"
                             alt="play" onclick="play()">
-                        <img class="hidden" id="pause" src="https://cdn-icons-png.flaticon.com/512/8029/8029489.png"
+                        <img class="hidden invert hover:w-[3.8rem]" id="pause" src="https://cdn-icons-png.flaticon.com/512/8029/8029489.png"
                             alt="pause" onclick="pause()">
                     </div>
-                    <div class="w-10"><img src="https://cdn-icons-png.flaticon.com/512/3318/3318722.png" alt="forward">
+                    <div class="grid w-[4rem] justify-center content-center invert"><img class="hover:w-[3.8rem]" src="https://cdn-icons-png.flaticon.com/512/3318/3318722.png" alt="forward">
                     </div>
                 </div>
             </div>
@@ -75,6 +75,9 @@ Pause, Forward, backward
 </pre>
                 <pre class="text-white/60">Inspiration:
 alixya
+
+Thank You:
+David - Coding Help
                 </pre>
             </div>
         </div>
