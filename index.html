@@ -1,54 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Profound</title>
 </head>
+
 <body>
     <div class="flex flex-col w-screen h-screen overflow-hidden bg-[url('fons.jpg')] bg-cover">
         <div id="header" class="flex justify-between w-full overflow-hidden backdrop-blur p-2">
-            <div id="menu" class="grid w-10 h-10 bg-gray-800/25 rounded-full content-center justify-center group hover:bg-gray-800/40"><img class="invert w-7 h-7 opacity-60 group-hover:w-6 group-hover:h-6 group-hover:opacity-100" src="https://cdn-icons-png.flaticon.com/512/12314/12314153.png" alt="menu"></div>
-            <div id="brand" class="grid w-40 h-10 bg-gray-800/25 rounded-full content-center justify-center group hover:bg-gray-800/40"><p class="text-white text-lg opacity-60 group-hover:opacity-100">Profound</p></div>
-            <div id="theme" class="grid w-10 h-10 bg-gray-800/25 rounded-full content-center justify-center group hover:bg-gray-800/40"><img class="invert w-6 h-6 opacity-60 group-hover:w-5 group-hover:h-5 group-hover:opacity-100" src="https://cdn-icons-png.flaticon.com/512/481/481868.png" alt="brush"></div>
+            <div id="menu"
+                class="grid w-10 h-10 bg-gray-800/25 rounded-full content-center justify-center group hover:bg-gray-800/40 cursor-pointer">
+                <img class="invert w-7 h-7 opacity-60 group-hover:w-6 group-hover:h-6 group-hover:opacity-100"
+                    src="https://cdn-icons-png.flaticon.com/512/12314/12314153.png" alt="menu">
+            </div>
+            <div id="brand"
+                class="grid w-40 h-10 bg-gray-800/25 rounded-full content-center justify-center group hover:bg-gray-800/40 cursor-none">
+                <p class="text-white text-lg opacity-60 group-hover:opacity-100">Profound</p>
+            </div>
+            <div id="theme"
+                class="grid w-10 h-10 bg-gray-800/25 rounded-full content-center justify-center group hover:bg-gray-800/40 cursor-pointer">
+                <img class="invert w-6 h-6 opacity-60 group-hover:w-5 group-hover:h-5 group-hover:opacity-100"
+                    src="https://cdn-icons-png.flaticon.com/512/481/481868.png" alt="brush">
+            </div>
         </div>
-        <div id="section" class="grid w-full flex-1 border-2 content-center justify-center">
-            <div id="player" class="w-max border-2 rounded content-center">
+        <div id="section" class="grid w-full flex-1 content-center justify-center">
+            <div id="player" class="w-max rounded content-center">
                 <div class="w-40 flex-1"><img src="album.png" alt="album-art"></div>
                 <div class="flex flex-col">
                     <div class="">Trouble</div>
                     <div class="artist">Cage The Elephant</div>
                 </div>
                 <div class="flex">
-                    <div class="w-10"><img src="https://cdn-icons-png.flaticon.com/512/3318/3318703.png" alt="backward"></div>
-                    <div class="w-10">
-                        <img class="block" id="play" src="https://cdn-icons-png.flaticon.com/512/8029/8029490.png" alt="play" onclick="play()">
-                        <img class="hidden" id="pause" src="https://cdn-icons-png.flaticon.com/512/8029/8029489.png" alt="pause" onclick="pause()">
+                    <div class="w-10"><img src="https://cdn-icons-png.flaticon.com/512/3318/3318703.png" alt="backward">
                     </div>
-                    <div class="w-10"><img src="https://cdn-icons-png.flaticon.com/512/3318/3318722.png" alt="forward"></div>
+                    <div class="w-10">
+                        <img class="block" id="play" src="https://cdn-icons-png.flaticon.com/512/8029/8029490.png"
+                            alt="play" onclick="play()">
+                        <img class="hidden" id="pause" src="https://cdn-icons-png.flaticon.com/512/8029/8029489.png"
+                            alt="pause" onclick="pause()">
+                    </div>
+                    <div class="w-10"><img src="https://cdn-icons-png.flaticon.com/512/3318/3318722.png" alt="forward">
+                    </div>
                 </div>
             </div>
         </div>
         <div id="footer" class="flex p-2 justify-between backdrop-blur">
-            <button class="grid w-20 bg-gray-800/25 rounded-full content-center justify-center group hover:bg-gray-800/40 text-white" onclick="copyrights()"><p class="opacity-60 group-hover:opacity-100">Credits</p></button>
-            <div class="grid grid-col-3 grid-flow-col gap-2 w-40 h-12 bg-gray-800/25 rounded-full hover:bg-gray-800/40 p-2 content-center justify-center">
-                <div class="w-8"><img class="invert opacity-60 hover:opacity-100" src="https://cdn-icons-png.flaticon.com/512/721/721671.png" alt="java-script"></div>
-                <div class="w-8"><img class="invert opacity-60 hover:opacity-100" src="https://cdn-icons-png.flaticon.com/512/732/732007.png" alt="css"></div>
-                <div class="w-8"><img class="invert opacity-60 hover:opacity-100" src="https://cdn-icons-png.flaticon.com/512/1051/1051328.png" alt="html"></div>
+            <button
+                class="grid w-20 bg-gray-800/25 rounded-full content-center justify-center group hover:bg-gray-800/40 text-white"
+                onclick="copyrights()">
+                <p class="opacity-60 group-hover:opacity-100 group-hover:text-[14px]">Credits</p>
+            </button>
+            <div
+                class="grid grid-col-3 grid-flow-col gap-2 w-40 h-12 bg-gray-800/25 rounded-full hover:bg-gray-800/40 p-2 content-center justify-center">
+                <div class="w-8"><img class="invert opacity-60 hover:opacity-100"
+                        src="https://cdn-icons-png.flaticon.com/512/721/721671.png" alt="java-script"></div>
+                <div class="w-8"><img class="invert opacity-60 hover:opacity-100"
+                        src="https://cdn-icons-png.flaticon.com/512/732/732007.png" alt="css"></div>
+                <div class="w-8"><img class="invert opacity-60 hover:opacity-100"
+                        src="https://cdn-icons-png.flaticon.com/512/1051/1051328.png" alt="html"></div>
             </div>
         </div>
     </div>
 
-    <div class="top-0 left-2/4 absolute hidden w-40 h-40" id="crs">
-        <button class="border-2 rounded" onclick="close()">X</button>
-        <div class="icons">
-            <p>Flaticon - <a class="underline font-bold text-blue-300" href="https://www.flaticon.com">visit.</a></p>
+    <div id="crs" class="absolute top-1/2 left-1/2 -translate-y-[50%] -translate-x-[50%] hidden w-[40rem] h-[40rem] backdrop-blur bg-gray-950/50 rounded-[2rem]">
+        <div class="flex flex-col justify-evenly items-center w-full">
+            <div class="w-full h-full content-center text-center">
+                <pre class="text-white/60">Flaticon - <a class="underline font-bold text-blue-300" href="https://www.flaticon.com">visit.</a>
+Menu, Brush, Play,
+Pause, Forward, backward
+
+</pre>
+                <pre class="text-white/60">Inspiration:
+alixya
+                </pre>
+            </div>
         </div>
-        <div class="inspirations"></div>
+        <div class="absolute right-[16px] top-[16px] cursor-pointer">
+            <button class="border-2 border-white/20 rounded-full text-white/60 bg-white/10 hover:text-[12px] hover:border-white/50 hover:text-white w-8 h-8" onclick="closes()">X</button>
+        </div>
     </div>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
