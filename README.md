@@ -15,6 +15,7 @@ Layout view:
 ![image](https://github.com/user-attachments/assets/43a1552f-4d40-47ad-a894-dc30ccbeea95)
 
 End-user view:
-{to be added}
+![image](https://github.com/user-attachments/assets/1298cada-e650-49c6-b1c5-2357cd5160bd)
 
-Key collaborator - @dabbu-17
+
+Key collaborator - **@dabbu-17**
